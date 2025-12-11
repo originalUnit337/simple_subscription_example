@@ -11,8 +11,8 @@ class LocalStorage {
     return LocalStorage._(prefs);
   }
 
-  // bool get isSubscribed => _prefs.getBool(_subscribedKey) ?? false;
-  bool get isSubscribed => false;
+  bool get isSubscribed => _prefs.getBool(_subscribedKey) ?? false;
+  //bool get isSubscribed => false;
 
   Future<void> setSubscribed(bool value) async {
     await _prefs.setBool(_subscribedKey, value);
